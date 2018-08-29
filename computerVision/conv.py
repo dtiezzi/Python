@@ -75,11 +75,9 @@ img_gray = cv2.cvtColor(img_rs, cv2.COLOR_BGR2GRAY)
 for (kerneName, K) in kernelBank:
 	print("[INFO] applying {0} kernel".format(kerneName))
 	convOutput = convolution(img_gray, K)
-	cvOutput = cv2.filter2D(img_gray, -1, K)
 
 	cv2.imshow("Orignal", img_gray)
 	cv2.imshow("{0} - convolution".format(kerneName), convOutput)
-	cv2.imshow("{0} - opencv".format(kerneName), cvOutput)
 	cv2.waitKey(0)
 	cv2.destroyAllWindows()
 
