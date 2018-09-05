@@ -6,7 +6,7 @@
  
 ### Figura 1. Essa imagem é 1280 x 960 com um total de 1228800 pixels.
  
- ![aparecida](/Users/dtiezzi/Documents/AI/aparecida.jpeg)
+ ![aparecida](http:/143.107.196.146:/var/www/html/aparecida.jpeg)
  
  Existem diversos meios de acessar as características de uma imagem. Utilizando o Python, podemos lançar mão mão da biblioteca OpenCv. A OpenCV é uma ferramenta extremamente poderosa para manipular imagens e de grande importância para *deep learning* aplicado à imagens. Vamos ver um exemplo de como acessar e verificar as características da imagem acima:
  
