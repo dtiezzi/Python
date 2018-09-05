@@ -6,7 +6,7 @@
  
 ### Figura 1. Essa imagem é 1280 x 960 com um total de 1228800 pixels.
  
- ![aparecida](http:/143.107.196.146:/var/www/html/aparecida.jpeg)
+ ![aparecida](http://143.107.196.146:3000/aparecida.jpeg)
  
  Existem diversos meios de acessar as características de uma imagem. Utilizando o Python, podemos lançar mão mão da biblioteca OpenCv. A OpenCV é uma ferramenta extremamente poderosa para manipular imagens e de grande importância para *deep learning* aplicado à imagens. Vamos ver um exemplo de como acessar e verificar as características da imagem acima:
  
@@ -62,20 +62,20 @@ cv2.destroyAllWindows()
  
  **Blue**
  
- ![aparecidaB](/Users/dtiezzi/Documents/AI/html/bChannelSmall.png)
+ ![aparecidaB](http://143.107.196.146:3000/bChannelSmall.png)
  
  **Green**
  
- ![aparecidaG](/Users/dtiezzi/Documents/AI/html/gChannelSmall.png)
+ ![aparecidaG](http://143.107.196.146:3000/gChannelSmall.png)
  
  **Red**
  
- ![aparecidaG](/Users/dtiezzi/Documents/AI/html/rChannelSmall.png)
+ ![aparecidaG](http://143.107.196.146:3000/rChannelSmall.png)
  
  A sobreposição das matrizes forma a imagem final. E como são formadas essas matrizes? Elas são matrizes numéricas e representadas por valores que vão de 0 a 255. Quanto maior o valor, maior a intensidade daquela cor em um determinado pixel. Por exemplo, um pixel com os valores `(0, 0, 0)` representa a ausência de cor, que seria o preto. O valor `(255, 0, 0)`, seria o vermelho, o `(0, 255, 0)` verde e `(0, 0, 255)` azul. Assim, o `(255, 255, 255)` é o branco. Desta forma, um total de 16.777.216 combinações são possíveis e podem geram todo o espectro de color que o cérebro humano consegue entender. As cores em RGB também podem ser demonstradas em hexadecimal. São necessários somente dois caracteres para representar os valores de 0 a 255 em hexadecimal, sendo '00 = 0' 3 'FF = 255'. Desta forma, o valor `#FF0000` representa a cor vermelha. Existem outros esquemas de representação de cores como a HSV (Hue, Saturation, Lightness) ou a CMYK (Cyan, Magenta, Yellow, Key/Black) entre outros. [Clique aqui para acessar uma ferramenta *online*](http://colorizer.org).
  E como podemos acessar o valor de cada pixel? As matrizes são indexadas. Em Python, a indexação sempre começa em `0`. Então vamos ver a imagem abaixo:
  
-  ![matrix](/Users/dtiezzi/Documents/AI/html/matrix.png)
+  ![matrix](http://143.107.196.146:3000/matrix.png)
   
  Temos uma imagem com 64 pixels (8, 8, 1) para representar a letra `I`. Veja que temos os índices para as colunas `x` e as linhas `y`. Desta forma, a coordenada da matriz (4, 5) acessa o pixel da coluna de índice `x = 4` e a linha `y = 5`. A matriz da esquerda representa o valor de cada pixel que para `(4, 5) = 0`, que representa a cor preta. Em uma matriz multidimensional de uma imagem colorida teremos três valores para cada pixel. Cada valor representa a cor na escala RGB (ou BGR para o OpenCV). O OpenCV e outras bibliotecas de processamento de imagem como scikit-image para Python representam imagens RGB com uma matriz multidimensional da biblioteca NumPy (*NumPy arrays*). *NumPy arrays* são representados pela `(altura, largura, profundidade)`. Os Para exemplificar vamos acessar um pixel da imagem anterior:
  
@@ -109,7 +109,7 @@ cv2.destroyAllWindows()
 
  **A imagem em escala de cinza.**
  
- ![aparecidaGray](/Users/dtiezzi/Documents/AI/html/aparecida_gray.png)
+ ![aparecidaGray](http://143.107.196.146:3000/aparecida_gray.png)
  
  Agora, para finalizar, vamos fazer um subset da imagem e colocar uns pontos vermelhos em locais específicos:
  
@@ -136,4 +136,4 @@ cv2.destroyAllWindows()
   
 **A imagem recortada com a 'fumaça' vermelha**
 
-![aparecidaGray](/Users/dtiezzi/Documents/AI/html/aparecida_cropped1.png)
+![aparecidaGray](http://143.107.196.146:3000/aparecida_cropped1.png)
