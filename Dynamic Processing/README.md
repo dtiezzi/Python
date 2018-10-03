@@ -4,7 +4,7 @@ Here I demonstrate a pratical example how dynamic programming can speed up the p
 </br>
 I used a function that calculates the Fibonacci sequence in a for loop from 0 to the number the user wants to.
 </br>
-There are two python script. One using the Fibonacci function in a recursive way `times.py`, and other in a dynamic way `timesDym.py`.
+There are two python scripts. One using the Fibonacci function in a recursive way `times.py`, and other in a dynamic way `timesDym.py`.
 </br> 
 You have to install the matplotlib package before running them. 
 </br>
