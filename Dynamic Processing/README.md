@@ -8,4 +8,7 @@ There are two python scripts. One using the Fibonacci function in a recursive wa
 </br> 
 You have to install the matplotlib package before running them. 
 </br>
-Take a look how different is the processing time as you increase the number in the Fibonacci sequence.
+Take a look how different is the processing time as you increase the number in the Fibonacci sequence. Bellow I display the output plots using the 35th position in the sequence. In a recursive way, the time spent to calculate increases exponentially whereas, in dynamic way, it's linear.
+
+![rec]()
+![dym]()
