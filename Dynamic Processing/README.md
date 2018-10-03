@@ -10,5 +10,5 @@ You have to install the matplotlib package before running them.
 <\br>
 Take a look how different is the processing time as you increase the number in the Fibonacci sequence. Bellow I display the output plots using the 35th position in the sequence. In a recursive way, the time spent to calculate increases exponentially whereas, in dynamic way, it's linear.
 <\br>
-![rec](http://143.107.196.146:3000/fiboRec.png)
+![rec](http://143.107.196.146:3000/fiboRe.png)
 ![dym](http://143.107.196.146:3000/fiboDym.png)
