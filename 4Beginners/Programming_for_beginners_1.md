@@ -85,6 +85,6 @@ In Linux or Mac open the `Terminal`. In Windows, open the `Cmd`. Both `Terminal`
 
 Once you are in the `Python` repository, you can access your `calculator.py` file. All you have to do is to type `python calculator.py` and your program will be executed. This is snapshot from my `Terminal`:
 
-![fig1](/Users/dtiezzi/Python/4beginers/fig1_1.png)
+![fig1](http://143.107.196.146:3000/fig1_1.png)
 
 Are we done? Not yet. We are going to learn how we can modify this code to create a more functional calculator.
