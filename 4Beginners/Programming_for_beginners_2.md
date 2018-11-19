@@ -28,7 +28,7 @@ print(result)
 
 Now save in your `Python` directory as forLoop.py and run in `Terminal` as `python ;`. This will be the output on your screen:
 
-![fig1](/Users/dtiezzi/Python/4beginers/fig2_1.png)
+![fig1](http://143.107.196.146:3000/fig2_1.png)
 
 Note we are printing the value of `i` for every loop iteration and, in the end, we print the final result. Try to change the `range(0, 10)` for `range(0, 100)`.
 
@@ -48,7 +48,7 @@ print(result)
 
 Here we create a variable `result` assigning the value of `0`, a character variable `answer` assigned as `Y` and a variable `i`. The `while` loop will be repeating until the answer is equal to `Y`. The `while` syntax here means while answer is equal to `Y` do something. Note before we compare again, we ask the user if he wants to keep adding or not. If his answer is not `Y`, the `while` loop ends. So, save this as whileLoop.py and run. The output should be something like this:
 
-![fig2](/Users/dtiezzi/Python/4beginers/fig2_2.png)
+![fig2](http://143.107.196.146:3000/fig2_2.png)
 
 Note the loop repeats the addition only if the user answer `Y`. Note the `upper()` function at the end of out `input()` function. It capitalizes the character, thus if the user type `y` it converts to `Y`. **Python is case sensitive**. 
 
