@@ -4,44 +4,55 @@ import datetime
 
 date = datetime.date.today().strftime("%Y_%m_%d")
 
-op = 1
-while op:
-    termList = Terms()
-    termList.createList()
+print('''
+Type the option:
+    1. Search Pubmed;
+    2. Read my saved files;
+    3. Exit.
+''')
+mode = input()
 
-    res = input('''
-Searching for the following terms:
-{0}
-Is it correctm (y/n)?    
-    '''.format(termList.terms)).lower()
+if mode == '1':
+    op = 1
+    while op:
+        termList = Terms()
+        termList.createList()
 
-    op = 0 if res == 'y' else 1
+        res = input('''
+    Searching for the following terms:
+    {0}
+    Is it correctm (y/n)?    
+        '''.format(termList.terms)).lower()
 
-nret = int(input("Type the maximun number of results to return: "))
+        op = 0 if res == 'y' else 1
 
-result = Pubmed(termList.terms, nret, 'dt@usp')
+    nret = int(input("Type the maximun number of results to return: "))
 
-result.readNcbi()
+    result = Pubmed(termList.terms, nret, 'dt@usp')
 
-with open("Myrecords_" +  date + '.txt', 'a+') as file:
-    n = 1
-    for record in result.records:
-        file.write("File #" + str(n) + '\n')
-        ti = record.get("TI", "?")
-        ti = "title:" + ti + '\n'
-        file.write(ti)
-        au = record.get("AU", "?")
-        au = "authors:" + str(au) + '\n'
-        file.write(au)
-        so = record.get("SO", "?")
-        so = "source:" + so + '\n'
-        file.write(so)
-        ab = record.get("AB", "?")
-        ab = "abstract:" + ab + '\n'
-        file.write(ab)
-        file.write('\n\n')
-        n+=1
-        
-        
-        
-        
+    result.readNcbi()
+
+    with open("Myrecords_" +  date + '.txt', 'a+') as file:
+        n = 1
+        for record in result.records:
+            file.write("File #" + str(n) + '\n')
+            ti = record.get("TI", "?")
+            ti = "title:" + ti + '\n'
+            file.write(ti)
+            au = record.get("AU", "?")
+            au = "authors:" + str(au) + '\n'
+            file.write(au)
+            so = record.get("SO", "?")
+            so = "source:" + so + '\n'
+            file.write(so)
+            ab = record.get("AB", "?")
+            ab = "abstract:" + ab + '\n'
+            file.write(ab)
+            file.write('\n\n')
+            n+=1
+
+elif mode == '2':
+     pass
+
+else:
+    pass
